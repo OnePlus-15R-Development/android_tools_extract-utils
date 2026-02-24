@@ -56,7 +56,7 @@ def lib_fixup_vendorcompat(
     *args: Any,
     **kwargs: Any,
 ):
-    return f'{lib}-vendorcompat' if partition in ['odm', 'vendor'] else lib
+    return f'{lib}-vendorcompat' if partition in ['odm', 'system_ext', 'vendor'] else lib
 
 
 def lib_fixup_remove_proto_version_suffix(
